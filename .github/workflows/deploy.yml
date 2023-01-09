@@ -7,7 +7,7 @@ on:
 
 env:
   # alphanumeric string under 14 characters
-  RESOURCE_GROUP_NAME: containerapps-demo-123
+  RESOURCE_GROUP_NAME: containerapps-demo-1233
 
   # specify your preferred region
   REGION: westeurope
@@ -30,6 +30,7 @@ jobs:
         creds: ${{ secrets.AzureSPN }}
     
     - name: ls
+      uses: azure/CLI@v1
       with:
         inlinescript: >
           ls
