@@ -28,6 +28,11 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AzureSPN }}
+    
+    - name: ls
+      with:
+        inlinescript: >
+          ls
 
     - name: Create resource group
       uses: azure/CLI@v1
@@ -44,7 +49,7 @@ jobs:
         inlineScript: >
           echo "Creating resources"
 
-          az deployment group create --resource-group ${{ env.RESOURCE_GROUP_NAME }} --template-file '/github/workspace/Azure/main.bicep' --debug
+          az deployment group create --resource-group ${{ env.RESOURCE_GROUP_NAME }} --template-file './Azure/main.bicep' --debug
 
   build:
     runs-on: ubuntu-latest
