@@ -7,7 +7,7 @@ on:
 
 env:
   # alphanumeric string under 14 characters
-  RESOURCE_GROUP_NAME: containerapps-demo-1233
+  RESOURCE_GROUP_NAME: cad556
 
   # specify your preferred region
   REGION: westeurope
