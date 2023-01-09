@@ -6,7 +6,6 @@ on:
     - deploy
 
 env:
-  
   # alphanumeric string under 14 characters
   RESOURCE_GROUP_NAME: containerapps-demo
 
