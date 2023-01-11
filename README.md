@@ -77,7 +77,7 @@ The easiest way to deploy the code is to make a commit directly to the `deploy` 
 
 ![Editing the deploy file.](docs/media/edit-deploy.png)
 
-Provide a custom resource group name for the app, and then commit the change to a new branch named `deploy`. 
+Provide a custom resource group name for the app, and then commit the change to a new branch named `deploy`. As the resource group name is used as identifier for the container registry, make sure to use a unique across Azure consisting of 5-50 lowercase alphanumeric characters, e.g *capdemo842*.
 
 ![Pushing a change to the deploy branch to trigger a build.](docs/media/edited-file.png)
 
